@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SIGED.UI.Web.Data;
 using SIGED.UI.Web.Models;
 using SIGED.UI.Web.Services;
+using SIGED.Infrastructure.Context;
 
 namespace SIGED.UI.Web
 {
@@ -32,6 +33,10 @@ namespace SIGED.UI.Web
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddDbContext<SIGEDContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
