@@ -10,12 +10,10 @@ namespace SIGED.Infrastructure.Context
     {
         public static void Initialize(SIGEDContext context)
         {
-            //context.Database.EnsureCreated();
 
-            // Look for any students.
             if (context.Estudantes.Any())
             {
-                return;   // DB has been seeded
+                return; 
             }
 
             var niveisEnsino = new NivelEnsino[]
@@ -30,7 +28,7 @@ namespace SIGED.Infrastructure.Context
             var estudantes = new Estudante[]
             {
                 new Estudante {
-                    EstudanteNome = "Carson",
+                    Nome = "Carson",
                     Altura = 1.75M,
                     Peso = 90.5M, 
                     DataNacimento = DateTime.Parse("2010-09-01"),

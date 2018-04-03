@@ -12,6 +12,8 @@ using SIGED.UI.Web.Data;
 using SIGED.UI.Web.Models;
 using SIGED.UI.Web.Services;
 using SIGED.Infrastructure.Context;
+using SIGED.ApplicationCore.Interfaces.Repository;
+using SIGED.Infrastructure.Repository;
 
 namespace SIGED.UI.Web
 {
@@ -40,6 +42,7 @@ namespace SIGED.UI.Web
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             services.AddMvc();
         }

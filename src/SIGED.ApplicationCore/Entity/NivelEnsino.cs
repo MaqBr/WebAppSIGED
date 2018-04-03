@@ -4,12 +4,13 @@ using System.Text;
 
 namespace SIGED.ApplicationCore.Entity
 {
-    public class NivelEnsino
+    public class NivelEnsino : BaseEntity
     {
-        public int NivelEnsinoId { get; set; }
         public string Descricao { get; set; }
-        public List<Estudante> Estudantes { get; set; }
-        public List<Professor> Professores { get; set; }
+        public int EstudanteId { get; set; }
+        public ICollection<Estudante> Estudantes { get; set; }
+        public int ProfessorId { get; set; }
+        public ICollection<Professor> Professores { get; set; }
 
     }
 }
