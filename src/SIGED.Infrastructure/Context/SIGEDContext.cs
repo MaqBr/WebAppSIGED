@@ -53,6 +53,15 @@ namespace SIGED.Infrastructure.Context
         {
             builder.ToTable("Estudante");
 
+
+            //builder.HasKey(k => k.Id)
+            //    .HasName("Id");
+
+            //builder.Property(p => p.Id)
+            //    .IsRequired()
+            //    .UseSqlServerIdentityColumn();
+
+
             builder.Property(ci => ci.Id)
                 .ForSqlServerUseSequenceHiLo("estudante_hilo")
                 .IsRequired();
@@ -87,7 +96,7 @@ namespace SIGED.Infrastructure.Context
         //    builder.ToTable("CatalogBrand");
 
         //    builder.HasKey(ci => ci.Id);
-
+        http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/
         //    builder.Property(ci => ci.Id)
         //       .ForSqlServerUseSequenceHiLo("catalog_brand_hilo")
         //       .IsRequired();
@@ -117,7 +126,7 @@ namespace SIGED.Infrastructure.Context
         //    var navigation = builder.Metadata.FindNavigation(nameof(Order.OrderItems));
 
         //    navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
-
+        https://medium.com/@fulviocanducci/microsoft-entity-framework-core-2-0-40168ef8e521
         //    builder.OwnsOne(o => o.ShipToAddress);
         //}
 
