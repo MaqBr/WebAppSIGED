@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SIGED.UI.Web.Models;
+using SIGED.ApplicationCore.Entity;
 
 namespace SIGED.UI.Web.Data
 {
@@ -22,5 +23,7 @@ namespace SIGED.UI.Web.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<SIGED.ApplicationCore.Entity.Estudante> Estudante { get; set; }
     }
 }
