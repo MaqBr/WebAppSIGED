@@ -41,12 +41,11 @@ namespace SIGED.UI.Web
             services.AddDbContext<SIGEDContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-
-            // Add application services.
-            services.AddScoped<IEstudanteService, EstudanteService>();
+            
             services.AddTransient<IEmailSender, EmailSender>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped(typeof(IEstudanteRepository), typeof(EstudanteRepository));
+
+            services.AddScoped<IEstudanteService, EstudanteService>();
+            services.AddScoped<IEstudanteRepository, EstudanteRepository>();
 
             services.AddMvc();
         }
