@@ -86,9 +86,11 @@ namespace SIGED.Infrastructure.Context
                 .WithMany()
                 .HasForeignKey(ci => ci.NivelEnsinoId);
 
-            //builder.HasOne(ci => ci.CatalogType)
-            //    .WithMany()
-            //    .HasForeignKey(ci => ci.CatalogTypeId);
+
+            builder.HasOne(ci => ci.Endereco)
+                .WithOne(x => x.Estudante);
+                
+
         }
 
         //private void ConfigureCatalogBrand(EntityTypeBuilder<CatalogBrand> builder)
