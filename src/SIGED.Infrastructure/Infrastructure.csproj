@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Data\Migrations\" />
     <Folder Include="EntityConfig\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SIGED.ApplicationCore\SIGED.ApplicationCore.csproj" />
+    <ProjectReference Include="..\SIGED.ApplicationCore\ApplicationCore.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,10 +8,10 @@ namespace SIGED.Infrastructure.UoW
     public class UnitOfWork : IUnitOfWork
     {
 
-        private readonly SIGEDContext _context;
+        private readonly Contexto _context;
         private bool _disposed;
 
-        public UnitOfWork(SIGEDContext context)
+        public UnitOfWork(Contexto context)
         {
             _context = context;
             _disposed = false;

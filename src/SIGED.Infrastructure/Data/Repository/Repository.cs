@@ -12,9 +12,9 @@ namespace SIGED.Infrastructure.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
     {
-        protected readonly SIGEDContext _dbContext;
+        protected readonly Contexto _dbContext;
 
-        public Repository(SIGEDContext dbContext)
+        public Repository(Contexto dbContext)
         {
             _dbContext = dbContext;
         }

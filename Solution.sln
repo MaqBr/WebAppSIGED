@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Appl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{6841DE37-DF2A-412A-BA0E-8371CD5D53A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGED.ApplicationCore", "src\SIGED.ApplicationCore\SIGED.ApplicationCore.csproj", "{FE46E34F-0261-4E7F-A0AF-AB173C9291EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore", "src\SIGED.ApplicationCore\ApplicationCore.csproj", "{FE46E34F-0261-4E7F-A0AF-AB173C9291EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGED.Infrastructure", "src\SIGED.Infrastructure\SIGED.Infrastructure.csproj", "{451B94F0-A475-48BA-9C4B-C1F2ADA813EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\SIGED.Infrastructure\Infrastructure.csproj", "{451B94F0-A475-48BA-9C4B-C1F2ADA813EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIGED.UI.Web", "src\SIGED.UI.Web\SIGED.UI.Web.csproj", "{FFCB274B-CA67-4788-BA57-21640DFD607F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.Web", "src\SIGED.UI.Web\UI.Web.csproj", "{FFCB274B-CA67-4788-BA57-21640DFD607F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

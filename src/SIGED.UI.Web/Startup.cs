@@ -38,7 +38,7 @@ namespace SIGED.UI.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddDbContext<SIGEDContext>(options =>
+            services.AddDbContext<Contexto>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             

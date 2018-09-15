@@ -8,7 +8,7 @@ namespace SIGED.Infrastructure.Context
 {
     public static class DbInitializer
     {
-        public static void Initialize(SIGEDContext context)
+        public static void Initialize(Contexto context)
         {
 
             if (context.Estudantes.Any())

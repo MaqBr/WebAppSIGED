@@ -23,7 +23,7 @@ namespace SIGED.UI.Web
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<SIGEDContext>();
+                    var context = services.GetRequiredService<Contexto>();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)

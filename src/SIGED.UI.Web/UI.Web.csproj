@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SIGED.ApplicationCore\SIGED.ApplicationCore.csproj" />
-    <ProjectReference Include="..\SIGED.Infrastructure\SIGED.Infrastructure.csproj" />
+    <ProjectReference Include="..\SIGED.ApplicationCore\ApplicationCore.csproj" />
+    <ProjectReference Include="..\SIGED.Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

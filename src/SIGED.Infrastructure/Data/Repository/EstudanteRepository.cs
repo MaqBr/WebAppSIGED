@@ -10,7 +10,7 @@ namespace SIGED.Infrastructure.Repository
 {
     public class EstudanteRepository : Repository<Estudante>, IEstudanteRepository
     {
-        public EstudanteRepository(SIGEDContext context) : base(context)
+        public EstudanteRepository(Contexto context) : base(context)
         {
 
         }
