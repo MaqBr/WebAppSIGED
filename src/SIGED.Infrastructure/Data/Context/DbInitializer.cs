@@ -11,34 +11,34 @@ namespace Infrastructure.Context
         public static void Initialize(Contexto context)
         {
 
-            if (context.Estudantes.Any())
-            {
-                return; 
-            }
+            //if (context.Estudantes.Any())
+            //{
+            //    return; 
+            //}
 
-            var niveisEnsino = new NivelEnsino[]
-            {
-                new NivelEnsino {
-                    Descricao = "Fundamental"
-                }
-            };
+            //var niveisEnsino = new NivelEnsino[]
+            //{
+            //    new NivelEnsino {
+            //        Descricao = "Fundamental"
+            //    }
+            //};
 
-            context.AddRange(niveisEnsino);
+            //context.AddRange(niveisEnsino);
 
-            var estudantes = new Estudante[]
-            {
-                new Estudante {
-                    Nome = "Carson",
-                    Altura = 1.75M,
-                    Peso = 90.5M, 
-                    DataNacimento = DateTime.Parse("2010-09-01"),
-                    NivelEnsino = niveisEnsino[0]
-                }
-            };
+            //var estudantes = new Estudante[]
+            //{
+            //    new Estudante {
+            //        Nome = "Carson",
+            //        Altura = 1.75M,
+            //        Peso = 90.5M, 
+            //        DataNacimento = DateTime.Parse("2010-09-01"),
+            //        NivelEnsino = niveisEnsino[0]
+            //    }
+            //};
 
-            context.AddRange(estudantes);
+            //context.AddRange(estudantes);
 
-            context.SaveChanges();
+            //context.SaveChanges();
 
             
         }
