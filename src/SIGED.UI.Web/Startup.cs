@@ -8,16 +8,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SIGED.UI.Web.Data;
-using SIGED.UI.Web.Models;
-using SIGED.UI.Web.Services;
-using SIGED.Infrastructure.Context;
-using SIGED.ApplicationCore.Interfaces.Repository;
-using SIGED.Infrastructure.Repository;
-using SIGED.ApplicationCore.Interfaces.Services;
-using SIGED.ApplicationCore.Services;
+using UI.Web.Data;
+using UI.Web.Models;
+using UI.Web.Services;
+using Infrastructure.Context;
+using ApplicationCore.Interfaces.Repository;
+using Infrastructure.Repository;
+using ApplicationCore.Interfaces.Services;
+using ApplicationCore.Services;
 
-namespace SIGED.UI.Web
+namespace UI.Web
 {
     public class Startup
     {

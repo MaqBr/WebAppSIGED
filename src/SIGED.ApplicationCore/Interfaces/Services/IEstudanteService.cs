@@ -1,10 +1,10 @@
-﻿using SIGED.ApplicationCore.Entity;
+﻿using ApplicationCore.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace SIGED.ApplicationCore.Interfaces.Services
+namespace ApplicationCore.Interfaces.Services
 {
     public interface IEstudanteService
     {

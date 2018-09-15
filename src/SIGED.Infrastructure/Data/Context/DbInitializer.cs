@@ -1,10 +1,10 @@
-﻿using SIGED.ApplicationCore.Entity;
+﻿using ApplicationCore.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SIGED.Infrastructure.Context
+namespace Infrastructure.Context
 {
     public static class DbInitializer
     {

@@ -1,12 +1,12 @@
-﻿using SIGED.ApplicationCore.Entity;
-using SIGED.ApplicationCore.Interfaces.Repository;
-using SIGED.ApplicationCore.Interfaces.Services;
+﻿using ApplicationCore.Entity;
+using ApplicationCore.Interfaces.Repository;
+using ApplicationCore.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace SIGED.ApplicationCore.Services
+namespace ApplicationCore.Services
 {
     public class EstudanteService : IEstudanteService
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace SIGED.UI.Web.Models
+namespace UI.Web.Models
 {
     public class ErrorViewModel
     {

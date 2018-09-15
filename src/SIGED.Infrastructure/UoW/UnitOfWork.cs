@@ -1,9 +1,9 @@
-﻿using SIGED.Infrastructure.Context;
+﻿using Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SIGED.Infrastructure.UoW
+namespace Infrastructure.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {

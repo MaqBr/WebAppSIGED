@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SIGED.ApplicationCore.Entity;
+using ApplicationCore.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SIGED.Infrastructure.Context
+namespace Infrastructure.Context
 {
     public class Contexto : DbContext
     {

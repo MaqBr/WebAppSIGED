@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SIGED.UI.Web.Models;
-using SIGED.ApplicationCore.Entity;
+using UI.Web.Models;
+using ApplicationCore.Entity;
 
-namespace SIGED.UI.Web.Data
+namespace UI.Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -24,6 +24,6 @@ namespace SIGED.UI.Web.Data
             // Add your customizations after calling base.OnModelCreating(builder);
         }
 
-        public DbSet<SIGED.ApplicationCore.Entity.Estudante> Estudante { get; set; }
+        public DbSet<ApplicationCore.Entity.Estudante> Estudante { get; set; }
     }
 }

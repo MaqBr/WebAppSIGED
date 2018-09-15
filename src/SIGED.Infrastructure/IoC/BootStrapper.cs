@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using SIGED.ApplicationCore.Interfaces.Repository;
-using SIGED.ApplicationCore.Interfaces.Services;
-using SIGED.ApplicationCore.Services;
-using SIGED.Infrastructure.Repository;
+using ApplicationCore.Interfaces.Repository;
+using ApplicationCore.Interfaces.Services;
+using ApplicationCore.Services;
+using Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SIGED.Infrastructure.IoC
+namespace Infrastructure.IoC
 {
     public class BootStrapper
     {

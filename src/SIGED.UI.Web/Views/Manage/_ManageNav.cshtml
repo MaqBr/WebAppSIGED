@@ -1,4 +1,4 @@
-﻿@using SIGED.UI.Web.Views.Manage
+﻿@using UI.Web.Views.Manage
 @inject SignInManager<ApplicationUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();

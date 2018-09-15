@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using SIGED.Infrastructure.Context;
+using Infrastructure.Context;
 
-namespace SIGED.UI.Web
+namespace UI.Web
 {
     public class Program
     {

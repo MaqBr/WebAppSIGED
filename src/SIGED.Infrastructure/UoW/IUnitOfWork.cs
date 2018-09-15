@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SIGED.Infrastructure.UoW
+namespace Infrastructure.UoW
 {
     public interface IUnitOfWork
     {

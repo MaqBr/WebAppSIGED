@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SIGED.UI.Web.Controllers;
+using UI.Web.Controllers;
 
 namespace Microsoft.AspNetCore.Mvc
 {

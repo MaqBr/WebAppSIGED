@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using SIGED.ApplicationCore.Entity;
-using SIGED.ApplicationCore.Interfaces.Services;
-using SIGED.UI.Web.Data;
+using ApplicationCore.Entity;
+using ApplicationCore.Interfaces.Services;
+using UI.Web.Data;
 
-namespace SIGED.UI.Web.Controllers
+namespace UI.Web.Controllers
 {
     public class EstudanteController : Controller
     {

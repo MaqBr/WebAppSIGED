@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SIGED.ApplicationCore.Entity
+namespace ApplicationCore.Entity
 {
     public class Endereco : BaseEntity
     {
