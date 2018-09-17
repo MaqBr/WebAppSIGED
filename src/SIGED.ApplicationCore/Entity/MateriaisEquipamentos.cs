@@ -4,9 +4,8 @@ using System.Text;
 
 namespace ApplicationCore.Entity
 {
-    public class MateriaisEquipamentos
+    public class MateriaisEquipamentos : BaseEntity
     {
-        public int MateriaisEquipamentosId { get; set; }
         public string MateriaisUtilizados { get; set; }
     }
 }

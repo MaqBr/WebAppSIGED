@@ -4,9 +4,8 @@ using System.Text;
 
 namespace ApplicationCore.Entity
 {
-    public class ProcessamentoAmostra
+    public class ProcessamentoAmostra : BaseEntity
     {
-        public int ProcessamentoAmostraId { get; set; }
 
         public int Peneira { get; set; }
 

@@ -4,10 +4,8 @@ using System.Text;
 
 namespace ApplicationCore.Entity
 {
-    public class CaracterizacaoArea
+    public class CaracterizacaoArea : BaseEntity
     {
-        public int CaracterizacaoAreaId { get; set; }
-
         public string TipoArea { get; set; }
 
         public string Cidade { get; set; }

@@ -24,6 +24,6 @@ namespace UI.Web.Data
             // Add your customizations after calling base.OnModelCreating(builder);
         }
 
-        public DbSet<ApplicationCore.Entity.Estudante> Estudante { get; set; }
+        public DbSet<ApplicationCore.Entity.Pesquisador> Pesquisador { get; set; }
     }
 }

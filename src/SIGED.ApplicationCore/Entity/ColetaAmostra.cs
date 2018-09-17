@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ApplicationCore.Entity
 {
-    public class ColetaAmostra
+    public class ColetaAmostra : BaseEntity
     {
         public int ColetaAmostraId { get; set; }
 

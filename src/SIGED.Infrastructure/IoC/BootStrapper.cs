@@ -17,10 +17,10 @@ namespace Infrastructure.IoC
             //UI.Web - ASPNET
 
             //Domain - ApplicationCore
-            services.AddScoped<IEstudanteService, EstudanteService>();
+            services.AddScoped<IPesquisadorService, PesquisadorService>();
 
             //Infra - Data
-            services.AddScoped<IEstudanteRepository, EstudanteRepository>();
+            services.AddScoped<IPesquisadorRepository, PesquisadorRepository>();
 
             //Infra - Identity
 

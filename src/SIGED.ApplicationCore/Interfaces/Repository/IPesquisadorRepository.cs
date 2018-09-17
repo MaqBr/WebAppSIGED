@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ApplicationCore.Interfaces.Repository
 {
-    public interface IEstudanteRepository : IRepository<Estudante>
+    public interface IPesquisadorRepository : IRepository<Pesquisador>
     {
-        Estudante ObterPorMatricula(int matricula);
+
     }
 }

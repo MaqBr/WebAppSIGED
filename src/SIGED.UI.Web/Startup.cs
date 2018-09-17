@@ -44,8 +44,8 @@ namespace UI.Web
             
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddScoped<IEstudanteService, EstudanteService>();
-            services.AddScoped<IEstudanteRepository, EstudanteRepository>();
+            services.AddScoped<IPesquisadorService, PesquisadorService>();
+            services.AddScoped<IPesquisadorRepository, PesquisadorRepository>();
 
             services.AddMvc();
         }

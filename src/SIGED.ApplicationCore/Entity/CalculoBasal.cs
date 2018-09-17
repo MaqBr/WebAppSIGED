@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ApplicationCore.Entity
 {
-    public class CalculoBasal
+    public class CalculoBasal : BaseEntity
     {
-        public int CalculoBasalId { get; set; }
+
     }
 }
