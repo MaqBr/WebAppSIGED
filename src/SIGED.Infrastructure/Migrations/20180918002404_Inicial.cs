@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Infrastructure.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,19 +12,19 @@ namespace Infrastructure.Migrations
                 name: "CalculosBasal",
                 columns: table => new
                 {
-                    CalculoBasalId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CalculosBasal", x => x.CalculoBasalId);
+                    table.PrimaryKey("PK_CalculosBasal", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "CaracterizacoesAreas",
                 columns: table => new
                 {
-                    CaracterizacaoAreaId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     TipoArea = table.Column<string>(nullable: true),
                     Cidade = table.Column<string>(nullable: true),
@@ -35,14 +35,14 @@ namespace Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CaracterizacoesAreas", x => x.CaracterizacaoAreaId);
+                    table.PrimaryKey("PK_CaracterizacoesAreas", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "ColetasAmostras",
                 columns: table => new
                 {
-                    ColetaAmostraId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     DataColeta = table.Column<DateTime>(nullable: false),
                     Profundidade = table.Column<int>(nullable: false),
@@ -55,41 +55,41 @@ namespace Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ColetasAmostras", x => x.ColetaAmostraId);
+                    table.PrimaryKey("PK_ColetasAmostras", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "MateriaisEquipamentos",
                 columns: table => new
                 {
-                    MateriaisEquipamentosId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     MateriaisUtilizados = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MateriaisEquipamentos", x => x.MateriaisEquipamentosId);
+                    table.PrimaryKey("PK_MateriaisEquipamentos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Pesquisadores",
                 columns: table => new
                 {
-                    PesquisadorId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(nullable: true),
                     InstituicaoDeEnsino = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pesquisadores", x => x.PesquisadorId);
+                    table.PrimaryKey("PK_Pesquisadores", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "ProcessamentoAmostras",
                 columns: table => new
                 {
-                    ProcessamentoAmostraId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Peneira = table.Column<int>(nullable: false),
                     Solucoes = table.Column<string>(nullable: true),
@@ -100,7 +100,7 @@ namespace Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProcessamentoAmostras", x => x.ProcessamentoAmostraId);
+                    table.PrimaryKey("PK_ProcessamentoAmostras", x => x.Id);
                 });
         }
 

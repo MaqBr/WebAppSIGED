@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20180915135242_Initial")]
-    partial class Initial
+    [Migration("20180918002404_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,18 +23,18 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("ApplicationCore.Entity.CalculoBasal", b =>
                 {
-                    b.Property<int>("CalculoBasalId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.HasKey("CalculoBasalId");
+                    b.HasKey("Id");
 
                     b.ToTable("CalculosBasal");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entity.CaracterizacaoArea", b =>
                 {
-                    b.Property<int>("CaracterizacaoAreaId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -50,14 +50,14 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("TipoSolo");
 
-                    b.HasKey("CaracterizacaoAreaId");
+                    b.HasKey("Id");
 
                     b.ToTable("CaracterizacoesAreas");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entity.ColetaAmostra", b =>
                 {
-                    b.Property<int>("ColetaAmostraId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -77,27 +77,27 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("TipodeTratamento");
 
-                    b.HasKey("ColetaAmostraId");
+                    b.HasKey("Id");
 
                     b.ToTable("ColetasAmostras");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entity.MateriaisEquipamentos", b =>
                 {
-                    b.Property<int>("MateriaisEquipamentosId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("MateriaisUtilizados");
 
-                    b.HasKey("MateriaisEquipamentosId");
+                    b.HasKey("Id");
 
                     b.ToTable("MateriaisEquipamentos");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entity.Pesquisador", b =>
                 {
-                    b.Property<int>("PesquisadorId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -105,14 +105,14 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("Nome");
 
-                    b.HasKey("PesquisadorId");
+                    b.HasKey("Id");
 
                     b.ToTable("Pesquisadores");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entity.ProcessamentoAmostra", b =>
                 {
-                    b.Property<int>("ProcessamentoAmostraId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -128,7 +128,7 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("TipodeArmazenamento");
 
-                    b.HasKey("ProcessamentoAmostraId");
+                    b.HasKey("Id");
 
                     b.ToTable("ProcessamentoAmostras");
                 });

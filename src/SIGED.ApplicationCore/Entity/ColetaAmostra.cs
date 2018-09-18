@@ -6,7 +6,6 @@ namespace ApplicationCore.Entity
 {
     public class ColetaAmostra : BaseEntity
     {
-        public int ColetaAmostraId { get; set; }
 
         public DateTime DataColeta { get; set; }
 
